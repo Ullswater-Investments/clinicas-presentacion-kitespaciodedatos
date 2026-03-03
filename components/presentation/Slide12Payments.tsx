@@ -31,7 +31,7 @@ const hitos = [
     amount: "Subvención − 11.500 €",
     title: "Entrega y Aceptación Final",
     concept:
-      "Liquidación del proyecto. Cálculo: (Subvención Total Recibida) − 1.500 € (Hito 1) − 10.000 € (Hito 2).",
+      "Liquidación del proyecto. Cálculo: 30.000 € (Subvención Total) − 1.500 € (Hito 1) − 10.000 € (Hito 2) = 18.500 €.",
     justification:
       "El pago solo se realiza tras la finalización, despliegue y validación del sistema por parte del equipo clínico.",
     color: "bg-[oklch(0.38_0.15_250)]",
