@@ -34,7 +34,7 @@ export default function Slide1Cover() {
         {/* Left column */}
         <div className="flex-1 flex flex-col justify-center px-12 py-8 gap-6">
           <div className="inline-flex items-center gap-2 bg-[oklch(0.78_0.14_85)] text-[oklch(0.20_0.05_240)] px-3 py-1 rounded text-xs font-mono font-bold uppercase tracking-wider w-fit">
-            Kit Espacio de Datos · Convocatoria 2025
+            Kit Espacio de Datos · Final Convocatoria 31 de Marzo del 2026
           </div>
 
           <h1 className="text-4xl font-bold text-white leading-tight text-pretty">
