@@ -28,7 +28,7 @@ const hitos = [
   {
     num: "03",
     when: "Fin de proyecto · Validación clínica",
-    amount: "Subvención − 11.500 €",
+    amount: "Subvención 30.000 €",
     title: "Entrega y Aceptación Final",
     concept:
       "Liquidación del proyecto. Cálculo: 30.000 € (Subvención Total) − 1.500 € (Hito 1) − 10.000 € (Hito 2) = 18.500 €.",
