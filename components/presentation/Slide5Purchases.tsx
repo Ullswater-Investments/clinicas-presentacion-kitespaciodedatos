@@ -47,9 +47,7 @@ export default function Slide5Purchases() {
             <p className="text-sm leading-relaxed text-[oklch(0.25_0.05_240)]">
               El WMS de ACCURO está diseñado para la{" "}
               <strong className="text-[oklch(0.38_0.15_250)]">complejidad de los formatos metálicos</strong>{" "}
-              (bobinas, barras, chapas) y su trazabilidad de colada. Cada pieza queda vinculada a su
-              certificado de origen digital, evitando roturas de stock imprevistas y monitorizando las
-              mermas de cada proceso de corte.
+              (bobinas, barras, chapas) y su trazabilidad de colada. Estos son <strong>servicios del catálogo ACCURO</strong> que tu empresa puede seleccionar en función de sus necesidades reales dentro del presupuesto de 30.000€ del KTED.
             </p>
           </div>
 
@@ -126,7 +124,10 @@ export default function Slide5Purchases() {
         <div className="w-72 flex flex-col gap-4">
           <div className="bg-white border border-[oklch(0.88_0.02_240)] rounded-lg p-5 flex-1 flex flex-col gap-3">
             <p className="text-[oklch(0.38_0.15_250)] text-xs font-mono uppercase tracking-widest font-bold">
-              Servicios WMS Incluidos
+              Servicios WMS del Catálogo ACCURO
+            </p>
+            <p className="text-[oklch(0.55_0.03_240)] text-xs mb-1">
+              Tu empresa puede seleccionar los que necesita dentro del bono KTED de 30.000€
             </p>
             <div className="flex flex-col gap-2">
               {[

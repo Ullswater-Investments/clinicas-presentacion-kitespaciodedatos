@@ -101,12 +101,16 @@ export default function Slide7Invoicing() {
                 ))}
               </div>
 
-              <div className="bg-[oklch(0.88_0.06_240)] rounded-lg p-3 flex flex-wrap gap-2">
-                {["Servicio 10: OEE", "Servicio 11: Dashboards", "Servicio 12: OFs", "Servicio 13: Calidad"].map((std) => (
-                  <span key={std} className="bg-[oklch(0.38_0.15_250)] text-white text-xs px-2 py-1 rounded font-mono">
-                    {std}
-                  </span>
-                ))}
+              <div className="bg-[oklch(0.88_0.06_240)] rounded-lg p-3 flex flex-col gap-1">
+                <p className="text-[oklch(0.38_0.15_250)] text-xs font-mono font-bold">Servicios MES del catálogo ACCURO</p>
+                <p className="text-[oklch(0.45_0.03_240)] text-xs">Tu empresa selecciona los que necesita</p>
+                <div className="flex flex-wrap gap-2 mt-1">
+                  {["Servicio 10: OEE", "Servicio 11: Dashboards", "Servicio 12: OFs", "Servicio 13: Calidad"].map((std) => (
+                    <span key={std} className="bg-[oklch(0.38_0.15_250)] text-white text-xs px-2 py-1 rounded font-mono">
+                      {std}
+                    </span>
+                  ))}
+                </div>
               </div>
             </div>
           </div>
@@ -116,7 +120,10 @@ export default function Slide7Invoicing() {
         <div className="w-64 flex flex-col gap-4">
           <div className="bg-white border border-[oklch(0.88_0.02_240)] rounded-lg p-4 flex flex-col gap-3">
             <p className="text-[oklch(0.38_0.15_250)] text-xs font-mono uppercase tracking-widest font-bold">
-              Servicios MES Incluidos
+              Servicios MES del Catálogo ACCURO
+            </p>
+            <p className="text-[oklch(0.55_0.03_240)] text-xs mb-1">
+              Selecciona los que necesita tu empresa dentro del bono de 30.000€
             </p>
             {[
               { svc: "Servicio 10", desc: "Monitorización OEE con IoT" },

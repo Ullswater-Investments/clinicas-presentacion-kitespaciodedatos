@@ -44,20 +44,16 @@ export default function Slide1Cover() {
           </h1>
 
           <p className="text-[oklch(0.75_0.05_240)] text-base leading-relaxed max-w-xl">
-            Solicitud de Ayuda <strong className="text-white">"Kit Espacio de Datos" (30.000€)</strong> para la
-            modernización de la infraestructura digital, gestión de producción y trazabilidad de materiales metálicos.
+            El programa <strong className="text-white">"Kit Espacio de Datos" (KTED)</strong> otorga a tu empresa una <strong className="text-[oklch(0.78_0.14_85)]">subvención de 30.000€</strong> para digitalizarte. ACCURO Technology pone a tu disposición un catálogo de servicios especializados en la industria del metal; <strong className="text-white">tu empresa decide qué servicios necesita</strong> hasta ese importe.
           </p>
 
           {/* Executive Summary Box */}
           <div className="border border-[oklch(0.78_0.14_85)]/40 bg-[oklch(0.30_0.15_250)]/70 rounded-lg p-5 max-w-xl">
             <p className="text-xs font-mono text-[oklch(0.78_0.14_85)] uppercase tracking-widest mb-2">
-              Resumen Ejecutivo
+              Cómo funciona
             </p>
             <p className="text-[oklch(0.88_0.04_240)] text-sm leading-relaxed">
-              Este proyecto tiene un doble objetivo: <strong className="text-white">integrar a la empresa en el ecosistema
-              industrial de espacios de datos europeos</strong> garantizando la interoperabilidad y soberanía del dato, y dotar a la empresa
-              de un <strong className="text-white">sistema integral de gestión ERP + MES + WMS + CRM</strong> (compras, trazabilidad de
-              coladas, fabricación, logística y calidad) financiado íntegramente a través del bono de 30.000 €.
+              <strong className="text-white">1. Obtienes la subvención de 30.000€</strong> a través del KTED de Red.es. <strong className="text-white">2. Realizas un análisis con ACCURO</strong> para seleccionar los servicios de nuestro catálogo (ERP, MES, WMS, CRM) que mejor resuelven los retos de tu empresa. <strong className="text-[oklch(0.78_0.14_85)]">3. Solo consumes los servicios que necesitas</strong>, siempre dentro del bono aprobado.
             </p>
           </div>
         </div>

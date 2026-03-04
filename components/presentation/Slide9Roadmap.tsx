@@ -4,15 +4,15 @@ const phases = [
   {
     num: "Fase 1",
     months: "Mes 1",
-    title: "Diagnóstico y Selección",
+    title: "Análisis y Selección de Servicios",
     color: "bg-[oklch(0.55_0.18_250)]",
     tasks: [
-      "Cuestionario de diagnóstico 10 preguntas",
-      "Selección de servicios prioritarios del catálogo",
-      "Elección del espacio de datos en Lista de Confianza CRED",
-      "Definición de arquitectura ERP+MES+WMS+CRM",
+      "Diagnóstico de situación digital actual (10 preguntas)",
+      "Selección de servicios del catálogo ACCURO según necesidades",
+      "Definición del presupuesto: qué servicios cubrir con los 30.000€",
+      "Elección del espacio de datos y arquitectura tecnológica",
     ],
-    deliverables: "Plan técnico + Servicios seleccionados",
+    deliverables: "Plan personalizado + Servicios seleccionados por la empresa",
   },
   {
     num: "Fase 2",

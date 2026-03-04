@@ -61,11 +61,9 @@ export default function Slide4Architecture() {
         <div className="flex flex-col gap-5 flex-1">
           <div className="bg-white border border-[oklch(0.88_0.02_240)] rounded-lg p-5">
             <p className="text-sm leading-relaxed text-[oklch(0.25_0.05_240)]">
-              La metodología de ACCURO se centra en{" "}
-              <strong className="text-[oklch(0.38_0.15_250)]">romper los silos de información</strong>{" "}
-              entre planta y oficina. Un dato capturado en una línea de corte de metal alimenta
-              automáticamente el inventario del WMS y se refleja en el balance financiero del ERP,
-              generando los <strong>productos de datos publicables</strong> exigidos por el KTED.
+              ACCURO Technology ofrece servicios en cuatro grandes áreas tecnológicas.{" "}
+              <strong className="text-[oklch(0.38_0.15_250)]">No todas las empresas necesitan los mismos servicios:</strong>{" "}
+              realizamos juntos un diagnóstico para identificar qué módulos resuelven los retos reales de tu empresa y seleccionar los que más valor aportan dentro del presupuesto de 30.000€.
             </p>
           </div>
 
@@ -126,7 +124,10 @@ export default function Slide4Architecture() {
           </div>
 
           <div className="bg-[oklch(0.38_0.15_250)] rounded-lg p-4">
-            <p className="text-[oklch(0.78_0.14_85)] text-xs font-mono uppercase tracking-widest mb-2">30 Servicios ACCURO</p>
+            <p className="text-[oklch(0.78_0.14_85)] text-xs font-mono uppercase tracking-widest mb-2">Catálogo a tu Medida</p>
+            <p className="text-[oklch(0.88_0.04_240)] text-xs leading-relaxed mb-3">
+              ACCURO ofrece 30 servicios distribuidos en estas 4 áreas. <strong className="text-white">Tu empresa selecciona solo los que necesita</strong> hasta los 30.000€ del bono KTED.
+            </p>
             {[
               "9 servicios ERP avanzado",
               "8 servicios MES de planta",

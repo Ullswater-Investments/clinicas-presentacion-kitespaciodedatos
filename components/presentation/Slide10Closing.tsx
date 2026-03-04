@@ -31,10 +31,10 @@ export default function Slide10Closing() {
           </h2>
 
           <p className="text-[oklch(0.85_0.04_240)] text-sm leading-relaxed max-w-xl">
-            Este proyecto transforma la empresa metalúrgica en una entidad{" "}
-            <strong className="text-white">"Data-Driven"</strong> preparada para la Industria 4.0,
-            eliminando silos de información entre planta y oficina y maximizando la rentabilidad
-            por orden de fabricación con tecnología financiada íntegramente por fondos europeos.
+            El KTED concede a tu empresa{" "}
+            <strong className="text-white">30.000€ de subvención</strong> para digitalizarte. ACCURO Technology pone a tu disposición un catálogo de 30 servicios especializados en la industria del metal —{" "}
+            <strong className="text-[oklch(0.78_0.14_85)]">tu empresa decide qué servicios necesita</strong>{" "}
+            realizando previamente un análisis conjunto. Solo pagas lo que consumes, siempre dentro del bono europeo.
           </p>
 
           {/* Investment box */}
@@ -85,14 +85,14 @@ export default function Slide10Closing() {
               Logros del Proyecto
             </p>
             {[
-              "Integración certificada en espacio de datos industrial",
+              "Empresa obtiene subvención KTED de 30.000€",
+              "Análisis conjunto para seleccionar servicios necesarios",
+              "Implementación solo de los servicios seleccionados",
               "ERP con coste real por orden de fabricación",
               "MES con OEE en tiempo real e IoT",
               "WMS con trazabilidad completa de colada",
               "Control de mermas y valorización de chatarra",
               "CRM con pronóstico de demanda por IA",
-              "Portal de pedidos online para clientes",
-              "30 servicios implementados del catálogo ACCURO",
               "Documentación de justificación Next Generation EU",
             ].map((item) => (
               <div key={item} className="flex items-start gap-2">

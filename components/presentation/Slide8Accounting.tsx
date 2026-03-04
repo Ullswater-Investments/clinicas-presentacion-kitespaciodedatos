@@ -76,10 +76,7 @@ export default function Slide8Accounting() {
         <div className="flex-1 flex flex-col gap-4">
           <div className="bg-white border border-[oklch(0.88_0.02_240)] rounded-lg p-5">
             <p className="text-sm leading-relaxed text-[oklch(0.25_0.05_240)]">
-              Los 30 servicios de ACCURO han sido diseñados para ser{" "}
-              <strong className="text-[oklch(0.38_0.15_250)]">íntegramente financiables</strong> con los
-              30.000 € del Kit Espacio de Datos. Cada servicio genera evidencias de datos publicables
-              en el catálogo del espacio sectorial, cumpliendo los requisitos de la convocatoria.
+              Este es el <strong className="text-[oklch(0.38_0.15_250)]">catálogo completo de servicios que ACCURO Technology pone a disposición</strong> de las empresas del metal. <strong>Cada empresa es libre de seleccionar los servicios que necesita</strong> en función de su situación actual, realizando previamente un análisis de sus necesidades. El importe total de los servicios elegidos no puede superar los <strong className="text-[oklch(0.38_0.15_250)]">30.000€ del bono KTED</strong> que obtiene la empresa.
             </p>
           </div>
 
@@ -108,13 +105,13 @@ export default function Slide8Accounting() {
         <div className="w-60 flex flex-col gap-4">
           <div className="bg-[oklch(0.38_0.15_250)] rounded-lg p-5 flex flex-col gap-3">
             <p className="text-[oklch(0.78_0.14_85)] text-xs font-mono uppercase tracking-widest font-bold">
-              Actividades Financiables
+              Proceso de Seleccion
             </p>
             {[
-              { act: "Preparación de Datos", desc: "Limpieza y estructuración de BD de producción" },
-              { act: "Conexión Técnica", desc: "Instalación de conectores Eclipse Dataspace" },
-              { act: "Gobernanza y Legal", desc: "Contratos de adhesión al espacio de datos" },
-              { act: "Publicación Catálogo", desc: "Metadatos y subida del producto de datos" },
+              { act: "1. Diagnóstico", desc: "Análisis de la situación actual y necesidades reales de tu empresa" },
+              { act: "2. Selección", desc: "Eliges los servicios de este catálogo que más valor aportan a tu empresa" },
+              { act: "3. Presupuesto", desc: "Los servicios elegidos se ajustan al bono de 30.000€ del KTED" },
+              { act: "4. Implementación", desc: "ACCURO implementa solo los servicios que has seleccionado" },
             ].map((item) => (
               <div key={item.act} className="flex flex-col gap-0.5 border-b border-[oklch(0.50_0.15_250)] pb-2 last:border-0">
                 <p className="text-[oklch(0.78_0.14_85)] text-xs font-bold">{item.act}</p>
@@ -125,11 +122,10 @@ export default function Slide8Accounting() {
 
           <div className="bg-[oklch(0.78_0.14_85)] rounded-lg p-5 flex flex-col gap-3 flex-1">
             <p className="text-[oklch(0.25_0.05_240)] text-xs font-mono uppercase tracking-widest font-bold">
-              Cuestionario de Diagnóstico
+              Cuestionario de Diagnostico
             </p>
             <p className="text-[oklch(0.20_0.05_240)] text-xs leading-relaxed">
-              ACCURO propone un cuestionario de 10 preguntas para identificar los servicios prioritarios
-              según las necesidades de cada empresa metalúrgica.
+              ACCURO propone un diagnóstico previo de 10 preguntas para <strong>identificar y priorizar los servicios del catálogo</strong> que mejor se adaptan a la realidad de cada empresa metalúrgica.
             </p>
             <div className="flex flex-col gap-1.5 mt-1">
               {[
@@ -145,8 +141,8 @@ export default function Slide8Accounting() {
               ))}
             </div>
             <div className="mt-auto bg-[oklch(0.65_0.12_80)] rounded p-2 text-center">
-              <p className="text-[oklch(0.20_0.05_240)] font-bold text-xs">30 servicios · 30.000€</p>
-              <p className="text-[oklch(0.30_0.05_240)] text-xs">100% financiado KTED</p>
+              <p className="text-[oklch(0.20_0.05_240)] font-bold text-xs">Tu empresa elige · 30.000€ KTED</p>
+              <p className="text-[oklch(0.30_0.05_240)] text-xs">Solo los servicios que necesitas</p>
             </div>
           </div>
         </div>

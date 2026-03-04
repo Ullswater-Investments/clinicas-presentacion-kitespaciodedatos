@@ -29,11 +29,7 @@ export default function Slide11EcoIntro() {
               Principio Central del Modelo
             </p>
             <p className="text-white text-base leading-relaxed">
-              Nuestro modelo garantiza que la empresa metalúrgica financia la modernización tecnológica{" "}
-              <strong className="text-[oklch(0.78_0.14_85)]">
-                exclusivamente a través del bono europeo de 30.000€
-              </strong>
-              , asumiendo ACCURO Technology el riesgo de la gestión y la justificación.
+              Tu empresa <strong className="text-[oklch(0.78_0.14_85)]">obtiene una subvención de 30.000€</strong> del programa KTED y decide libremente qué servicios del catálogo de ACCURO Technology consume. Realizamos juntos un análisis previo para identificar las necesidades reales; <strong className="text-[oklch(0.78_0.14_85)]">nunca imponemos servicios que no necesitas</strong>. El presupuesto se adapta siempre al importe del bono concedido.
             </p>
           </div>
 

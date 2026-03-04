@@ -23,9 +23,10 @@ export default function Slide3Vision() {
           <div className="bg-white border border-[oklch(0.88_0.02_240)] rounded-lg p-5">
             <p className="text-sm leading-relaxed text-[oklch(0.25_0.05_240)]">
               El programa <strong className="text-[oklch(0.38_0.15_250)]">"Kit Espacio de Datos" (KTED)</strong> de Red.es,
-              financiado con fondos Next Generation EU, permite a empresas metalúrgicas cofinanciar hasta{" "}
-              <strong>30.000 € como Proveedor</strong> para integrarse en espacios de datos sectoriales
-              bajo estándares de soberanía, seguridad e interoperabilidad de la UE.
+              financiado con fondos Next Generation EU, concede a empresas como la tuya una{" "}
+              <strong>subvención de hasta 30.000€</strong> para digitalizarse. ACCURO Technology ofrece un catálogo completo de servicios especializados —{" "}
+              <strong className="text-[oklch(0.38_0.15_250)]">cada empresa elige libremente qué servicios necesita</strong>{" "}
+              hasta cubrir el importe del bono.
             </p>
           </div>
 
@@ -72,13 +73,12 @@ export default function Slide3Vision() {
           {/* Funding box */}
           <div className="bg-[oklch(0.78_0.14_85)] rounded-lg p-5 flex flex-col gap-2">
             <p className="text-[oklch(0.25_0.05_240)] text-xs font-mono uppercase tracking-widest font-bold">
-              Financiación Máxima (Proveedor)
+              Subvención Disponible para tu Empresa
             </p>
             <p className="text-4xl font-bold text-[oklch(0.20_0.05_240)]">30.000€</p>
             <div className="h-px bg-[oklch(0.65_0.12_80)] my-1" />
             <p className="text-[oklch(0.25_0.05_240)] text-xs leading-relaxed">
-              Para la modalidad de Incorporación Avanzada como Proveedor: publicación activa de productos
-              de datos en el catálogo del espacio de datos sectorial.
+              La empresa <strong>obtiene el bono de 30.000€</strong> y decide con ACCURO qué servicios del catálogo consume según sus necesidades reales. No es un paquete cerrado: es un presupuesto flexible a tu medida.
             </p>
           </div>
 
