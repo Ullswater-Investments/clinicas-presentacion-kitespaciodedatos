@@ -52,9 +52,37 @@ export default function PresentationController() {
             <div
               key={slide.id}
               id={`slide-${slide.id}`}
-              className="rounded-xl overflow-hidden shadow-2xl"
+              className="rounded-xl overflow-hidden shadow-2xl flex flex-col"
             >
               <SlideComponent />
+              {/* Contact bar */}
+              <div className="bg-[oklch(0.18_0.06_250)] border-t border-[oklch(0.28_0.08_250)] px-6 py-2 flex items-center justify-between gap-4 flex-wrap">
+                <a
+                  href="mailto:ivan.becerro@accuro.es"
+                  className="flex items-center gap-1.5 text-[oklch(0.75_0.06_240)] hover:text-[oklch(0.78_0.14_85)] transition-colors text-xs font-mono"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                  ivan.becerro@accuro.es
+                </a>
+                <a
+                  href="https://wa.me/34619482648"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-1.5 text-[oklch(0.75_0.06_240)] hover:text-[oklch(0.78_0.14_85)] transition-colors text-xs font-mono"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13.5 19.79 19.79 0 0 1 1.58 4.92 2 2 0 0 1 3.54 2.7h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 10.91a16 16 0 0 0 6.29 6.29l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                  WhatsApp 619 482 648
+                </a>
+                <a
+                  href="https://www.metal.kitespaciodedatos.eu"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-1.5 text-[oklch(0.75_0.06_240)] hover:text-[oklch(0.78_0.14_85)] transition-colors text-xs font-mono"
+                >
+                  <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+                  www.metal.kitespaciodedatos.eu
+                </a>
+              </div>
             </div>
           )
         })}
