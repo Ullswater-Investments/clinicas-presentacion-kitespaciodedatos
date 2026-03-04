@@ -3,28 +3,37 @@
 const layers = [
   {
     num: "01",
-    title: "Frontend Clínica — App a Medida",
-    subtitle: "Interfaz ultra-sencilla · React / Next.js",
-    desc: "Gestión rápida de pacientes, escaneo de albaranes y materiales en gabinete. Diseñada para el personal clínico sin formación técnica.",
-    items: ["Registro de materiales en gabinete", "Escaneo de lotes e implantes", "Vista de tratamientos y costes"],
+    title: "ERP — Gestión Empresarial Avanzada",
+    subtitle: "Finanzas · Compras · RRHH · Compliance",
+    desc: "Cerebro financiero y administrativo. Gestiona órdenes de compra, costes laborales por OF, certificaciones de calidad, facturación automática e informes de sostenibilidad.",
+    items: ["Gestión financiera por OF", "Módulo certificaciones ISO", "Portal de proveedores digital"],
     color: "bg-[oklch(0.55_0.18_250)]",
     border: "border-[oklch(0.55_0.18_250)]",
   },
   {
     num: "02",
-    title: "Middleware — Python Controllers",
-    subtitle: "API JSON-RPC · Capa de traducción",
-    desc: "Traduce las acciones de la clínica en transacciones seguras hacia Odoo. Valida, enruta y transforma los datos garantizando integridad.",
-    items: ["Controladores JSON-RPC", "Validación y transformación de datos", "Autenticación y seguridad (RGPD)"],
+    title: "MES — Ejecución de Fabricación en Planta",
+    subtitle: "OEE · OFs digitales · Control calidad",
+    desc: "Conecta la gestión con las máquinas. Monitoriza OEE en tiempo real, entrega instrucciones digitales a operarios, controla calidad de piezas y registra tiempos por tarea.",
+    items: ["Monitorización OEE con IoT", "Órdenes de fabricación sin papel", "Control calidad en tiempo real"],
+    color: "bg-[oklch(0.45_0.17_250)]",
+    border: "border-[oklch(0.45_0.17_250)]",
+  },
+  {
+    num: "03",
+    title: "WMS — Almacén y Logística Industrial",
+    subtitle: "Colada · Bobinas · Chatarra · Expediciones",
+    desc: "Diseñado para la complejidad de formatos metálicos: bobinas, barras, chapas. Gestiona trazabilidad de colada, mermas de corte, stock de utillaje y expediciones automatizadas.",
+    items: ["Trazabilidad colada y lote", "Control de mermas y chatarra", "Expediciones con transportistas"],
     color: "bg-[oklch(0.38_0.15_250)]",
     border: "border-[oklch(0.38_0.15_250)]",
   },
   {
-    num: "03",
-    title: "Backend — ERP Odoo",
-    subtitle: "Motor contable · Base de datos maestra",
-    desc: "Base de datos robusta, motor contable completo, conciliación bancaria y gestión de inventario maestro con trazabilidad total.",
-    items: ["Módulo Inventario y Almacén", "Módulo Contabilidad y Facturación", "Conciliación bancaria automática"],
+    num: "04",
+    title: "CRM — Gestión Comercial Industrial",
+    subtitle: "Clientes · Demanda · Homologación",
+    desc: "Plataforma para el seguimiento de ofertas, pronóstico de demanda con IA, búsqueda de proveedores en espacios de datos sectoriales y homologación digital de certificaciones.",
+    items: ["Pronóstico de demanda con IA", "Portal de estado de pedidos", "Homologación automática proveedores"],
     color: "bg-[oklch(0.25_0.12_250)]",
     border: "border-[oklch(0.25_0.12_250)]",
   },
@@ -38,28 +47,26 @@ export default function Slide4Architecture() {
         <div>
           <p className="text-[oklch(0.78_0.14_85)] text-xs font-mono uppercase tracking-widest mb-0.5">Solución</p>
           <h2 className="text-white text-xl font-bold">
-            Arquitectura Tecnológica: Usabilidad a Medida + Motor Odoo
+            Arquitectura Integral: ERP + MES + WMS + CRM para la Industria 4.0
           </h2>
         </div>
         <div className="flex items-center gap-2">
           <div className="w-2 h-2 rounded-full bg-[oklch(0.78_0.14_85)]" />
-          <span className="text-[oklch(0.78_0.14_85)] text-xs font-mono">04 / 10</span>
+          <span className="text-[oklch(0.78_0.14_85)] text-xs font-mono">04 / 13</span>
         </div>
       </div>
 
       <div className="flex p-8 gap-6">
-        {/* Architecture description */}
+        {/* Architecture stacks */}
         <div className="flex flex-col gap-5 flex-1">
           <div className="bg-white border border-[oklch(0.88_0.02_240)] rounded-lg p-5">
             <p className="text-sm leading-relaxed text-[oklch(0.25_0.05_240)]">
-              Proponemos una <strong className="text-[oklch(0.38_0.15_250)]">arquitectura desacoplada (Headless)</strong>.
-              No forzaremos al personal clínico a aprender un ERP complejo. Construiremos una{" "}
-              <strong>interfaz a medida, ultra-sencilla</strong>, que se comunicará en tiempo real con Odoo mediante
-              una <strong>API desarrollada en Python</strong>.
+              ACCURO Technology ofrece servicios en cuatro grandes áreas tecnológicas.{" "}
+              <strong className="text-[oklch(0.38_0.15_250)]">No todas las empresas necesitan los mismos servicios:</strong>{" "}
+              realizamos juntos un diagnóstico para identificar qué módulos resuelven los retos reales de tu empresa y seleccionar los que más valor aportan dentro del presupuesto de 30.000€.
             </p>
           </div>
 
-          {/* Layers */}
           <div className="flex flex-col gap-3 flex-1">
             {layers.map((layer, i) => (
               <div key={i} className={`rounded-lg border-l-4 ${layer.border} bg-white p-4 shadow-sm flex gap-4`}>
@@ -94,14 +101,13 @@ export default function Slide4Architecture() {
         <div className="w-72 flex flex-col gap-4">
           <div className="bg-white border border-[oklch(0.88_0.02_240)] rounded-lg p-5 flex-1 flex flex-col gap-3">
             <p className="text-[oklch(0.38_0.15_250)] text-xs font-mono uppercase tracking-widest font-bold">
-              Flujo de Datos en Tiempo Real
+              Flujo del Dato Industrial
             </p>
-
             {[
-              { from: "Personal Clínico", action: "Escanea / Registra", to: "App a Medida" },
-              { from: "App a Medida", action: "HTTP / JSON-RPC", to: "Python API" },
-              { from: "Python API", action: "Valida + Transforma", to: "Odoo Backend" },
-              { from: "Odoo Backend", action: "Registra + Calcula", to: "Contabilidad" },
+              { from: "Línea de Corte", action: "Sensor IoT captura dato", to: "MES" },
+              { from: "MES", action: "Actualiza OF + stock", to: "WMS + ERP" },
+              { from: "ERP + WMS", action: "Genera producto de datos", to: "Espacio de Datos" },
+              { from: "Espacio de Datos", action: "Publicación catálogo", to: "Cadena Suministro" },
             ].map((flow, i) => (
               <div key={i} className="flex flex-col gap-1">
                 <div className="flex items-center justify-between text-xs">
@@ -118,15 +124,18 @@ export default function Slide4Architecture() {
           </div>
 
           <div className="bg-[oklch(0.38_0.15_250)] rounded-lg p-4">
-            <p className="text-[oklch(0.78_0.14_85)] text-xs font-mono uppercase tracking-widest mb-2">Ventajas Headless</p>
+            <p className="text-[oklch(0.78_0.14_85)] text-xs font-mono uppercase tracking-widest mb-2">Catálogo a tu Medida</p>
+            <p className="text-[oklch(0.88_0.04_240)] text-xs leading-relaxed mb-3">
+              ACCURO ofrece 30 servicios distribuidos en estas 4 áreas. <strong className="text-white">Tu empresa selecciona solo los que necesita</strong> hasta los 30.000€ del bono KTED.
+            </p>
             {[
-              "Interfaz optimizada para clínica",
-              "Backend robusto sin comprometer UX",
-              "Escalable y modular",
-              "Actualizaciones independientes",
+              "9 servicios ERP avanzado",
+              "8 servicios MES de planta",
+              "7 servicios WMS logístico",
+              "6 servicios CRM + innovación",
             ].map((v) => (
               <div key={v} className="flex items-start gap-2 mb-1.5">
-                <span className="text-[oklch(0.78_0.14_85)] mt-0.5 text-xs">✓</span>
+                <span className="text-[oklch(0.78_0.14_85)] mt-0.5 text-xs">▸</span>
                 <span className="text-[oklch(0.88_0.04_240)] text-xs">{v}</span>
               </div>
             ))}
