@@ -15,14 +15,14 @@ import Slide12Payments from "./Slide12Payments"
 import Slide13Guarantees from "./Slide13Guarantees"
 
 const slides = [
-  { id: 1, title: "Portada", component: Slide1Cover },
-  { id: 2, title: "Desafíos", component: Slide2Challenge },
-  { id: 3, title: "Visión EHDS", component: Slide3Vision },
-  { id: 4, title: "Arquitectura", component: Slide4Architecture },
-  { id: 5, title: "Compras", component: Slide5Purchases },
-  { id: 6, title: "Rentabilidad", component: Slide6Costs },
-  { id: 7, title: "Facturación", component: Slide7Invoicing },
-  { id: 8, title: "Contabilidad", component: Slide8Accounting },
+  { id: 1, title: "Portada Metal", component: Slide1Cover },
+  { id: 2, title: "Desafíos Metal", component: Slide2Challenge },
+  { id: 3, title: "Visión KTED", component: Slide3Vision },
+  { id: 4, title: "ERP+MES+WMS+CRM", component: Slide4Architecture },
+  { id: 5, title: "WMS Trazabilidad", component: Slide5Purchases },
+  { id: 6, title: "Rentabilidad OF", component: Slide6Costs },
+  { id: 7, title: "MES de Planta", component: Slide7Invoicing },
+  { id: 8, title: "30 Servicios", component: Slide8Accounting },
   { id: 9, title: "Roadmap", component: Slide9Roadmap },
   { id: 10, title: "Cierre", component: Slide10Closing },
   { id: 11, title: "Modelo Económico", component: Slide11EcoIntro },
@@ -37,9 +37,9 @@ export default function PresentationController() {
       <div className="max-w-5xl mx-auto mb-8 flex items-center justify-between">
         <div>
           <p className="text-[oklch(0.78_0.14_85)] text-xs font-mono uppercase tracking-widest mb-1">
-            Kit Espacio de Datos · Convocatoria 2025
+            Kit Espacio de Datos · Convocatoria 2025–2026
           </p>
-          <h1 className="text-white text-xl font-bold">Proyecto EHDS — Clínica Dental</h1>
+          <h1 className="text-white text-xl font-bold">Proyecto KTED — Fabricación de Piezas de Metal · ACCURO Technology</h1>
         </div>
         <div className="text-[oklch(0.55_0.06_240)] text-xs font-mono">{slides.length} secciones</div>
       </div>
@@ -62,8 +62,8 @@ export default function PresentationController() {
 
       {/* Footer */}
       <div className="max-w-5xl mx-auto mt-10 flex items-center justify-between text-[oklch(0.40_0.04_240)] text-xs font-mono">
-        <span>Global Data Care · Clínica Dental · EHDS 2025</span>
-        <span>30.000 € · 6 meses · {slides.length} módulos</span>
+        <span>ACCURO Technology · Fabricación de Piezas de Metal · KTED 2025–2026</span>
+        <span>30.000 € · 7 meses · {slides.length} módulos</span>
       </div>
     </div>
   )

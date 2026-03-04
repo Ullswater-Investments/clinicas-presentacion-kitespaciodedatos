@@ -19,18 +19,18 @@ export default function Slide1Cover() {
             ))}
           </div>
           <span className="text-[oklch(0.85_0.06_240)] text-xs font-mono tracking-widest uppercase">
-            Unión Europea · Horizonte Europa
+            Unión Europea · Next Generation EU
           </span>
         </div>
         <div className="flex gap-4 items-center">
-          <span className="text-[oklch(0.7_0.06_240)] text-xs font-mono">EHDS · 2025–2026</span>
+          <span className="text-[oklch(0.7_0.06_240)] text-xs font-mono">KTED · 2025–2026</span>
           <div className="h-4 w-px bg-[oklch(0.55_0.12_250)]" />
           <span className="text-[oklch(0.78_0.14_85)] text-xs font-mono font-bold">30.000 €</span>
         </div>
       </div>
 
       {/* Main content */}
-        <div className="flex min-h-80">
+      <div className="flex min-h-80">
         {/* Left column */}
         <div className="flex-1 flex flex-col justify-center px-12 py-8 gap-6">
           <div className="inline-flex items-center gap-2 bg-[oklch(0.78_0.14_85)] text-[oklch(0.20_0.05_240)] px-3 py-1 rounded text-xs font-mono font-bold uppercase tracking-wider w-fit">
@@ -39,13 +39,13 @@ export default function Slide1Cover() {
 
           <h1 className="text-4xl font-bold text-white leading-tight text-pretty">
             Proyecto de Integración en el{" "}
-            <span className="text-[oklch(0.78_0.14_85)]">Espacio Europeo de Datos de Salud</span>{" "}
-            y Digitalización Integral Clínica
+            <span className="text-[oklch(0.78_0.14_85)]">Espacio de Datos Industrial</span>{" "}
+            y Digitalización Integral para la Fabricación de Piezas de Metal
           </h1>
 
           <p className="text-[oklch(0.75_0.05_240)] text-base leading-relaxed max-w-xl">
             Solicitud de Ayuda <strong className="text-white">"Kit Espacio de Datos" (30.000€)</strong> para la
-            modernización de infraestructuras de datos y gestión clínica integral.
+            modernización de la infraestructura digital, gestión de producción y trazabilidad de materiales metálicos.
           </p>
 
           {/* Executive Summary Box */}
@@ -54,11 +54,10 @@ export default function Slide1Cover() {
               Resumen Ejecutivo
             </p>
             <p className="text-[oklch(0.88_0.04_240)] text-sm leading-relaxed">
-              Este proyecto tiene un doble objetivo: <strong className="text-white">integrar a la clínica en el ecosistema
-              Global Data Care europeo</strong> garantizando la interoperabilidad de datos de salud, y dotar a la clínica
-              de un <strong className="text-white">sistema integral de gestión</strong> (compras, trazabilidad de
-              implantes, facturación y contabilidad) combinando una experiencia de usuario a medida con la potencia del
-              ERP Odoo.
+              Este proyecto tiene un doble objetivo: <strong className="text-white">integrar a la empresa en el ecosistema
+              industrial de espacios de datos europeos</strong> garantizando la interoperabilidad y soberanía del dato, y dotar a la empresa
+              de un <strong className="text-white">sistema integral de gestión ERP + MES + WMS + CRM</strong> (compras, trazabilidad de
+              coladas, fabricación, logística y calidad) financiado íntegramente a través del bono de 30.000 €.
             </p>
           </div>
         </div>
@@ -73,7 +72,7 @@ export default function Slide1Cover() {
           <div className="bg-[oklch(0.30_0.15_250)] border border-[oklch(0.45_0.15_250)] rounded-lg p-4 flex flex-col gap-2">
             <p className="text-[oklch(0.78_0.14_85)] text-xs font-mono uppercase tracking-widest">Marco Normativo</p>
             <div className="flex flex-wrap gap-2 mt-1">
-              {["HL7 FHIR", "EHDS 2025", "RGPD", "TicketBAI"].map((t) => (
+              {["UNE 0087:2025", "RGPD / ENS", "ISO 9001", "ISO 14001"].map((t) => (
                 <span key={t} className="bg-[oklch(0.38_0.15_250)] text-[oklch(0.85_0.05_240)] px-2 py-0.5 rounded text-xs">
                   {t}
                 </span>
@@ -82,13 +81,13 @@ export default function Slide1Cover() {
           </div>
           <div className="bg-[oklch(0.30_0.15_250)] border border-[oklch(0.45_0.15_250)] rounded-lg p-4 flex flex-col gap-2">
             <p className="text-[oklch(0.78_0.14_85)] text-xs font-mono uppercase tracking-widest">Duración</p>
-            <p className="text-2xl font-bold text-white">6 Meses</p>
-            <p className="text-[oklch(0.7_0.06_240)] text-xs">Implementación + Formación + Justificación</p>
+            <p className="text-2xl font-bold text-white">7 Meses</p>
+            <p className="text-[oklch(0.7_0.06_240)] text-xs">Diagnóstico + Implementación + Justificación</p>
           </div>
           <div className="bg-[oklch(0.30_0.15_250)] border border-[oklch(0.45_0.15_250)] rounded-lg p-4 flex flex-col gap-2">
-            <p className="text-[oklch(0.78_0.14_85)] text-xs font-mono uppercase tracking-widest">Tecnología</p>
+            <p className="text-[oklch(0.78_0.14_85)] text-xs font-mono uppercase tracking-widest">Sistemas</p>
             <div className="flex flex-col gap-1 mt-1">
-              {["App Clínica a Medida", "ERP Odoo Backend", "API Python JSON-RPC"].map((t) => (
+              {["ERP — Gestión Empresarial", "MES — Ejecución de Planta", "WMS — Almacén y Logística", "CRM — Clientes Industriales"].map((t) => (
                 <div key={t} className="flex items-center gap-2">
                   <div className="w-1.5 h-1.5 rounded-full bg-[oklch(0.78_0.14_85)]" />
                   <span className="text-[oklch(0.85_0.05_240)] text-xs">{t}</span>
@@ -101,10 +100,10 @@ export default function Slide1Cover() {
 
       {/* Bottom bar */}
       <div className="px-10 py-3 bg-[oklch(0.25_0.12_250)] flex items-center justify-between">
-        <span className="text-[oklch(0.65_0.06_240)] text-xs font-mono">Global Data Care · Clínica Dental</span>
+        <span className="text-[oklch(0.65_0.06_240)] text-xs font-mono">ACCURO Technology · Industria del Metal</span>
         <div className="flex items-center gap-2">
           <div className="w-2 h-2 rounded-full bg-[oklch(0.78_0.14_85)]" />
-          <span className="text-[oklch(0.65_0.06_240)] text-xs font-mono">Diapositiva 01 / 10</span>
+          <span className="text-[oklch(0.65_0.06_240)] text-xs font-mono">Diapositiva 01 / 13</span>
         </div>
       </div>
     </div>

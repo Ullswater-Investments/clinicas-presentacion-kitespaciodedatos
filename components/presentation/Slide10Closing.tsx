@@ -17,7 +17,7 @@ export default function Slide10Closing() {
         </div>
         <div className="flex items-center gap-2">
           <div className="w-2 h-2 rounded-full bg-[oklch(0.78_0.14_85)]" />
-          <span className="text-[oklch(0.78_0.14_85)] text-xs font-mono">10 / 10</span>
+          <span className="text-[oklch(0.78_0.14_85)] text-xs font-mono">10 / 13</span>
         </div>
       </div>
 
@@ -26,13 +26,15 @@ export default function Slide10Closing() {
         <div className="flex-1 flex flex-col gap-5">
           <h2 className="text-3xl font-bold text-white text-pretty leading-tight">
             Resumen del Proyecto{" "}
-            <span className="text-[oklch(0.78_0.14_85)]">"Kit Espacio de Datos"</span>
+            <span className="text-[oklch(0.78_0.14_85)]">"Kit Espacio de Datos"</span>{" "}
+            para la Industria del Metal
           </h2>
 
           <p className="text-[oklch(0.85_0.04_240)] text-sm leading-relaxed max-w-xl">
-            Este proyecto transforma la clínica en una entidad <strong className="text-white">"Data-Driven"</strong>{" "}
-            preparada para el futuro europeo, eliminando ineficiencias internas y maximizando el control económico
-            con tecnología de nivel empresarial.
+            Este proyecto transforma la empresa metalúrgica en una entidad{" "}
+            <strong className="text-white">"Data-Driven"</strong> preparada para la Industria 4.0,
+            eliminando silos de información entre planta y oficina y maximizando la rentabilidad
+            por orden de fabricación con tecnología financiada íntegramente por fondos europeos.
           </p>
 
           {/* Investment box */}
@@ -43,17 +45,17 @@ export default function Slide10Closing() {
             <div className="grid grid-cols-3 gap-4">
               <div className="text-center">
                 <p className="text-[oklch(0.78_0.14_85)] text-xs font-mono mb-1">Presupuesto Total</p>
-                <p className="text-white text-3xl font-bold">~30.000€</p>
+                <p className="text-white text-3xl font-bold">30.000€</p>
               </div>
               <div className="text-center border-x border-[oklch(0.45_0.15_250)]">
-                <p className="text-[oklch(0.78_0.14_85)] text-xs font-mono mb-1">Subvención Solicitada</p>
+                <p className="text-[oklch(0.78_0.14_85)] text-xs font-mono mb-1">Subvención KTED</p>
                 <p className="text-[oklch(0.78_0.14_85)] text-3xl font-bold">30.000€</p>
                 <p className="text-[oklch(0.70_0.08_250)] text-xs">100% cubierto</p>
               </div>
               <div className="text-center">
                 <p className="text-[oklch(0.78_0.14_85)] text-xs font-mono mb-1">ROI Proyectado</p>
-                <p className="text-white text-3xl font-bold">{">"} 3x</p>
-                <p className="text-[oklch(0.70_0.08_250)] text-xs">en 18 meses</p>
+                <p className="text-white text-3xl font-bold">{">"} 4x</p>
+                <p className="text-[oklch(0.70_0.08_250)] text-xs">en 24 meses</p>
               </div>
             </div>
           </div>
@@ -61,16 +63,16 @@ export default function Slide10Closing() {
           {/* ROI cards */}
           <div className="grid grid-cols-3 gap-3">
             <div className="bg-[oklch(0.30_0.13_250)] border border-[oklch(0.45_0.15_250)] rounded-lg p-4 text-center">
-              <p className="text-[oklch(0.78_0.14_85)] text-2xl font-bold">-40%</p>
-              <p className="text-[oklch(0.80_0.05_240)] text-xs mt-1">tiempos administrativos</p>
+              <p className="text-[oklch(0.78_0.14_85)] text-2xl font-bold">+12%</p>
+              <p className="text-[oklch(0.80_0.05_240)] text-xs mt-1">OEE de planta en primer trimestre</p>
+            </div>
+            <div className="bg-[oklch(0.30_0.13_250)] border border-[oklch(0.45_0.15_250)] rounded-lg p-4 text-center">
+              <p className="text-[oklch(0.78_0.14_85)] text-2xl font-bold">-60%</p>
+              <p className="text-[oklch(0.80_0.05_240)] text-xs mt-1">mermas no controladas en corte</p>
             </div>
             <div className="bg-[oklch(0.30_0.13_250)] border border-[oklch(0.45_0.15_250)] rounded-lg p-4 text-center">
               <p className="text-[oklch(0.78_0.14_85)] text-2xl font-bold">100%</p>
-              <p className="text-[oklch(0.80_0.05_240)] text-xs mt-1">trazabilidad de implantes</p>
-            </div>
-            <div className="bg-[oklch(0.30_0.13_250)] border border-[oklch(0.45_0.15_250)] rounded-lg p-4 text-center">
-              <p className="text-[oklch(0.78_0.14_85)] text-2xl font-bold">Total</p>
-              <p className="text-[oklch(0.80_0.05_240)] text-xs mt-1">control de márgenes por paciente</p>
+              <p className="text-[oklch(0.80_0.05_240)] text-xs mt-1">trazabilidad colada-pieza-cliente</p>
             </div>
           </div>
         </div>
@@ -83,15 +85,15 @@ export default function Slide10Closing() {
               Logros del Proyecto
             </p>
             {[
-              "Integración certificada EHDS 2025",
-              "App clínica a medida para el personal",
-              "ERP Odoo configurado y optimizado",
-              "Trazabilidad 100% de implantes y lotes",
-              "Facturación automática TicketBAI/FacturaE",
-              "Conciliación bancaria con IA",
-              "KPIs de rentabilidad por paciente",
-              "Formación completa del equipo",
-              "Documentación de justificación UE",
+              "Integración certificada en espacio de datos industrial",
+              "ERP con coste real por orden de fabricación",
+              "MES con OEE en tiempo real e IoT",
+              "WMS con trazabilidad completa de colada",
+              "Control de mermas y valorización de chatarra",
+              "CRM con pronóstico de demanda por IA",
+              "Portal de pedidos online para clientes",
+              "30 servicios implementados del catálogo ACCURO",
+              "Documentación de justificación Next Generation EU",
             ].map((item) => (
               <div key={item} className="flex items-start gap-2">
                 <div className="w-4 h-4 bg-[oklch(0.78_0.14_85)] rounded-full flex items-center justify-center shrink-0 mt-0.5">
@@ -109,8 +111,8 @@ export default function Slide10Closing() {
             </p>
             {[
               { num: "01", label: "Aprobación del proyecto" },
-              { num: "02", label: "Firma de convenio de subvención" },
-              { num: "03", label: "Inicio Fase 1 — Análisis" },
+              { num: "02", label: "Firma de acuerdo de servicio" },
+              { num: "03", label: "Inicio Fase 1 — Diagnóstico" },
             ].map((step) => (
               <div key={step.num} className="flex items-center gap-3">
                 <div className="w-7 h-7 bg-[oklch(0.30_0.13_250)] text-white rounded-full flex items-center justify-center text-xs font-bold shrink-0">
@@ -120,8 +122,8 @@ export default function Slide10Closing() {
               </div>
             ))}
             <div className="mt-1 bg-[oklch(0.65_0.12_80)] rounded-lg p-3 text-center">
-              <p className="text-[oklch(0.20_0.05_240)] font-bold text-sm">Global Data Care</p>
-              <p className="text-[oklch(0.30_0.05_240)] text-xs">Clínica Dental · EHDS 2025</p>
+              <p className="text-[oklch(0.20_0.05_240)] font-bold text-sm">ACCURO Technology</p>
+              <p className="text-[oklch(0.30_0.05_240)] text-xs">Industria del Metal · KTED 2025–2026</p>
             </div>
           </div>
         </div>

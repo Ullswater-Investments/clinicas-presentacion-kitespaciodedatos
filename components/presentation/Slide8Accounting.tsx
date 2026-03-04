@@ -1,143 +1,153 @@
 "use client"
 
+const services = [
+  {
+    area: "Área I — ERP",
+    color: "bg-[oklch(0.55_0.18_250)]",
+    items: [
+      { n: "01", label: "Gestión Financiera por OF" },
+      { n: "02", label: "Inventario Tiempo Real" },
+      { n: "03", label: "Huella de Carbono por Proceso" },
+      { n: "04", label: "Certificaciones ISO Digitales" },
+      { n: "05", label: "Compliance Normativo Auto." },
+      { n: "06", label: "Pedidos Integrados con Clientes" },
+      { n: "07", label: "Portal de Proveedores" },
+      { n: "08", label: "RRHH y Certificaciones" },
+      { n: "09", label: "Nóminas en Centros de Coste" },
+    ],
+  },
+  {
+    area: "Área II — MES",
+    color: "bg-[oklch(0.45_0.17_250)]",
+    items: [
+      { n: "10", label: "Monitorización OEE con IoT" },
+      { n: "11", label: "Dashboards de Planta" },
+      { n: "12", label: "OFs Digitales sin Papel" },
+      { n: "13", label: "Control Calidad Tiempo Real" },
+      { n: "14", label: "Asignación Cargas Máquina" },
+      { n: "15", label: "Seguimiento Estado OF" },
+      { n: "16", label: "Protocolos Seguridad" },
+      { n: "17", label: "Cierre OF con Trazabilidad" },
+    ],
+  },
+  {
+    area: "Área III — WMS",
+    color: "bg-[oklch(0.38_0.15_250)]",
+    items: [
+      { n: "18", label: "Trazabilidad Colada y Lote" },
+      { n: "19", label: "Gestión Compras y Reposición" },
+      { n: "20", label: "Reserva Material a OF" },
+      { n: "21", label: "Control Mermas y Chatarra" },
+      { n: "22", label: "Gestión Utillaje y Herramental" },
+      { n: "23", label: "Recepción y Validación Albarán" },
+      { n: "24", label: "Expediciones Automatizadas" },
+    ],
+  },
+  {
+    area: "Área IV — CRM",
+    color: "bg-[oklch(0.25_0.12_250)]",
+    items: [
+      { n: "25", label: "CRM Clientes Industriales" },
+      { n: "26", label: "Pronóstico de Demanda IA" },
+      { n: "27", label: "Búsqueda Proveedores por Espacio" },
+      { n: "28", label: "Homologación Digital Proveed." },
+      { n: "29", label: "Identidad Digital y Firma" },
+      { n: "30", label: "Publicación Productos de Datos" },
+    ],
+  },
+]
+
 export default function Slide8Accounting() {
   return (
     <div className="relative w-full flex flex-col bg-[oklch(0.98_0.005_240)]">
       {/* Header */}
       <div className="px-10 py-5 bg-[oklch(0.38_0.15_250)] flex items-center justify-between">
         <div>
-          <p className="text-[oklch(0.78_0.14_85)] text-xs font-mono uppercase tracking-widest mb-0.5">Contabilidad</p>
-          <h2 className="text-white text-xl font-bold">Contabilidad Ordenada y Conciliación Bancaria Automática</h2>
+          <p className="text-[oklch(0.78_0.14_85)] text-xs font-mono uppercase tracking-widest mb-0.5">Catálogo</p>
+          <h2 className="text-white text-xl font-bold">30 Servicios Especializados ACCURO — Financiables con los 30.000€</h2>
         </div>
         <div className="flex items-center gap-2">
           <div className="w-2 h-2 rounded-full bg-[oklch(0.78_0.14_85)]" />
-          <span className="text-[oklch(0.78_0.14_85)] text-xs font-mono">08 / 10</span>
+          <span className="text-[oklch(0.78_0.14_85)] text-xs font-mono">08 / 13</span>
         </div>
       </div>
 
       <div className="flex p-8 gap-6">
-        <div className="flex-1 flex flex-col gap-5">
-          {/* Main concept */}
-          <div className="bg-[oklch(0.38_0.15_250)] rounded-lg p-5">
-            <p className="text-[oklch(0.78_0.14_85)] text-xs font-mono uppercase tracking-widest mb-1 font-bold">
-              El Objetivo: El "Dato Único"
-            </p>
-            <p className="text-[oklch(0.90_0.04_240)] text-sm leading-relaxed">
-              El contable no tendrá que perseguir papeles. Tendrá acceso directo al entorno de Odoo, donde{" "}
-              <strong className="text-white">todas las operaciones de la clínica ya están estructuradas en asientos
-              contables</strong>, listos para su revisión y presentación fiscal.
+        <div className="flex-1 flex flex-col gap-4">
+          <div className="bg-white border border-[oklch(0.88_0.02_240)] rounded-lg p-5">
+            <p className="text-sm leading-relaxed text-[oklch(0.25_0.05_240)]">
+              Los 30 servicios de ACCURO han sido diseñados para ser{" "}
+              <strong className="text-[oklch(0.38_0.15_250)]">íntegramente financiables</strong> con los
+              30.000 € del Kit Espacio de Datos. Cada servicio genera evidencias de datos publicables
+              en el catálogo del espacio sectorial, cumpliendo los requisitos de la convocatoria.
             </p>
           </div>
 
-          {/* Reconciliation diagram */}
-          <div className="bg-white border border-[oklch(0.88_0.02_240)] rounded-lg p-5 flex-1">
-            <p className="text-[oklch(0.38_0.15_250)] text-xs font-mono uppercase tracking-widest mb-4 font-bold">
-              Ciclo de Conciliación Bancaria Automática
-            </p>
-            <div className="flex items-center justify-between gap-2">
-              {[
-                { label: "Banco / SWIFT", icon: "🏦", desc: "Extracto bancario diario descargado via Open Banking" },
-                { label: "Odoo IA", icon: "🤖", desc: "Motor de emparejamiento automático por IA" },
-                { label: "Facturas Venta", icon: "📤", desc: "Cobros de pacientes identificados al instante" },
-                { label: "Facturas Compra", icon: "📥", desc: "Pagos a proveedores conciliados automáticamente" },
-                { label: "Contable", icon: "👤", desc: "Solo revisa excepciones y anomalías" },
-              ].map((item, i) => (
-                <div key={i} className="flex-1 flex flex-col items-center text-center gap-1">
-                  <div className="w-12 h-12 bg-[oklch(0.88_0.06_240)] rounded-full flex items-center justify-center text-xl">
-                    {item.icon}
-                  </div>
-                  <p className="text-xs font-bold text-[oklch(0.25_0.05_240)] mt-1">{item.label}</p>
-                  <p className="text-xs text-[oklch(0.55_0.03_240)] leading-tight">{item.desc}</p>
-                  {i < 4 && (
-                    <div className="absolute" />
-                  )}
+          <div className="grid grid-cols-4 gap-3 flex-1">
+            {services.map((area) => (
+              <div key={area.area} className="bg-white border border-[oklch(0.88_0.02_240)] rounded-lg overflow-hidden flex flex-col">
+                <div className={`${area.color} p-3`}>
+                  <p className="text-white font-bold text-xs">{area.area}</p>
                 </div>
-              ))}
-            </div>
-            {/* Arrow between them */}
-            <div className="flex items-center mt-2 px-6">
-              {[0, 1, 2, 3].map((i) => (
-                <div key={i} className="flex-1 h-0.5 bg-[oklch(0.38_0.15_250)]" />
-              ))}
-            </div>
-          </div>
-
-          {/* Key features */}
-          <div className="grid grid-cols-3 gap-3">
-            <div className="bg-white border border-[oklch(0.88_0.02_240)] rounded-lg p-4">
-              <p className="text-[oklch(0.38_0.15_250)] text-xs font-mono uppercase tracking-widest mb-2 font-bold">
-                Sincronización Bancaria
-              </p>
-              <p className="text-[oklch(0.45_0.03_240)] text-xs leading-relaxed">
-                Odoo se conecta a los bancos de la clínica para descargar los extractos diarios automáticamente vía
-                Open Banking / SWIFT.
-              </p>
-            </div>
-            <div className="bg-white border border-[oklch(0.88_0.02_240)] rounded-lg p-4">
-              <p className="text-[oklch(0.38_0.15_250)] text-xs font-mono uppercase tracking-widest mb-2 font-bold">
-                Conciliación IA
-              </p>
-              <p className="text-[oklch(0.45_0.03_240)] text-xs leading-relaxed">
-                El sistema empareja automáticamente los pagos de pacientes con sus facturas y los pagos a proveedores
-                con sus facturas de compra.
-              </p>
-            </div>
-            <div className="bg-white border border-[oklch(0.88_0.02_240)] rounded-lg p-4">
-              <p className="text-[oklch(0.38_0.15_250)] text-xs font-mono uppercase tracking-widest mb-2 font-bold">
-                Exportación Fiscal
-              </p>
-              <p className="text-[oklch(0.45_0.03_240)] text-xs leading-relaxed">
-                Datos listos para la presentación de impuestos de forma ordenada y sin errores. Compatible con
-                software de gestoría externo.
-              </p>
-            </div>
+                <div className="p-3 flex flex-col gap-1.5 flex-1">
+                  {area.items.map((svc) => (
+                    <div key={svc.n} className="flex items-center gap-2">
+                      <span className={`${area.color} text-white text-xs w-6 h-6 rounded flex items-center justify-center font-mono font-bold shrink-0`}>
+                        {svc.n}
+                      </span>
+                      <span className="text-[oklch(0.35_0.04_240)] text-xs leading-tight">{svc.label}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
+            ))}
           </div>
         </div>
 
         {/* Right column */}
-        <div className="w-72 flex flex-col gap-4">
-          <div className="bg-white border border-[oklch(0.88_0.02_240)] rounded-lg p-5 flex flex-col gap-3">
-            <p className="text-[oklch(0.38_0.15_250)] text-xs font-mono uppercase tracking-widest font-bold">
-              Acceso del Contable en Odoo
+        <div className="w-60 flex flex-col gap-4">
+          <div className="bg-[oklch(0.38_0.15_250)] rounded-lg p-5 flex flex-col gap-3">
+            <p className="text-[oklch(0.78_0.14_85)] text-xs font-mono uppercase tracking-widest font-bold">
+              Actividades Financiables
             </p>
             {[
-              { module: "Diario de Ventas", status: "Automático", ok: true },
-              { module: "Diario de Compras", status: "Automático", ok: true },
-              { module: "Conciliación Bancaria", status: "1 clic", ok: true },
-              { module: "Modelo 303 IVA", status: "Exportación directa", ok: true },
-              { module: "Modelo 111 IRPF", status: "Exportación directa", ok: true },
-              { module: "Balance y P&L", status: "Tiempo real", ok: true },
+              { act: "Preparación de Datos", desc: "Limpieza y estructuración de BD de producción" },
+              { act: "Conexión Técnica", desc: "Instalación de conectores Eclipse Dataspace" },
+              { act: "Gobernanza y Legal", desc: "Contratos de adhesión al espacio de datos" },
+              { act: "Publicación Catálogo", desc: "Metadatos y subida del producto de datos" },
             ].map((item) => (
-              <div key={item.module} className="flex items-center justify-between">
-                <p className="text-xs text-[oklch(0.35_0.04_240)]">{item.module}</p>
-                <span className="text-xs text-green-600 font-mono bg-green-50 px-1.5 py-0.5 rounded">
-                  {item.status}
-                </span>
+              <div key={item.act} className="flex flex-col gap-0.5 border-b border-[oklch(0.50_0.15_250)] pb-2 last:border-0">
+                <p className="text-[oklch(0.78_0.14_85)] text-xs font-bold">{item.act}</p>
+                <p className="text-[oklch(0.80_0.07_240)] text-xs">{item.desc}</p>
               </div>
             ))}
           </div>
 
-          <div className="bg-[oklch(0.78_0.14_85)] rounded-lg p-4 flex flex-col gap-2">
+          <div className="bg-[oklch(0.78_0.14_85)] rounded-lg p-5 flex flex-col gap-3 flex-1">
             <p className="text-[oklch(0.25_0.05_240)] text-xs font-mono uppercase tracking-widest font-bold">
-              Ahorro Contable Estimado
+              Cuestionario de Diagnóstico
             </p>
-            <p className="text-[oklch(0.20_0.05_240)] text-3xl font-bold">-40%</p>
-            <p className="text-[oklch(0.30_0.05_240)] text-xs">horas dedicadas a tareas manuales de contabilidad</p>
-            <div className="h-px bg-[oklch(0.65_0.12_80)] my-1" />
-            <p className="text-[oklch(0.20_0.05_240)] text-xl font-bold">0 errores</p>
-            <p className="text-[oklch(0.30_0.05_240)] text-xs">en conciliación por procesamiento automático</p>
-          </div>
-
-          <div className="bg-[oklch(0.38_0.15_250)] rounded-lg p-4">
-            <p className="text-[oklch(0.78_0.14_85)] text-xs font-mono uppercase tracking-widest mb-2">
-              Bancos Compatibles
+            <p className="text-[oklch(0.20_0.05_240)] text-xs leading-relaxed">
+              ACCURO propone un cuestionario de 10 preguntas para identificar los servicios prioritarios
+              según las necesidades de cada empresa metalúrgica.
             </p>
-            {["BBVA", "Santander", "CaixaBank", "Sabadell", "Kutxabank"].map((b) => (
-              <div key={b} className="flex items-center gap-2 mb-1">
-                <div className="w-1.5 h-1.5 bg-[oklch(0.78_0.14_85)] rounded-full" />
-                <span className="text-[oklch(0.88_0.04_240)] text-xs">{b}</span>
-              </div>
-            ))}
+            <div className="flex flex-col gap-1.5 mt-1">
+              {[
+                "Bloque A: Eficiencia ERP",
+                "Bloque B: Control MES",
+                "Bloque C: Logística WMS",
+                "Bloque D: Conectividad datos",
+              ].map((b) => (
+                <div key={b} className="flex items-center gap-2">
+                  <div className="w-1.5 h-1.5 rounded-full bg-[oklch(0.25_0.05_240)] shrink-0" />
+                  <span className="text-[oklch(0.25_0.05_240)] text-xs">{b}</span>
+                </div>
+              ))}
+            </div>
+            <div className="mt-auto bg-[oklch(0.65_0.12_80)] rounded p-2 text-center">
+              <p className="text-[oklch(0.20_0.05_240)] font-bold text-xs">30 servicios · 30.000€</p>
+              <p className="text-[oklch(0.30_0.05_240)] text-xs">100% financiado KTED</p>
+            </div>
           </div>
         </div>
       </div>
