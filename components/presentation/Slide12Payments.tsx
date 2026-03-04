@@ -5,37 +5,34 @@ const hitos = [
     num: "01",
     when: "A la firma del acuerdo",
     amount: "1.500 €",
-    title: "Arranque y Conector EHDS",
+    title: "Arranque y Conector KTED",
     concept:
-      "Despliegue técnico del conector al Espacio Europeo de Datos de Salud.",
+      "Despliegue técnico del conector Eclipse Dataspace y adhesión inicial al espacio de datos industrial seleccionado en la Lista de Confianza del CRED.",
     justification:
-      "Este pago inicial es un requisito técnico y administrativo indispensable para demostrar ante la administración que la implementación del conector ha comenzado.",
+      "Este pago inicial es requisito técnico y administrativo para demostrar ante Red.es que la implementación del conector ha comenzado antes del cierre de la convocatoria.",
     color: "bg-[oklch(0.55_0.18_250)]",
-    barWidth: "w-1/12",
   },
   {
     num: "02",
     when: "Mes 3 · Tras recibir la subvención",
     amount: "10.000 €",
-    title: "Inicio de Integración Odoo",
+    title: "Inicio de Integración ERP + MES",
     concept:
-      "Comienzo del desarrollo del sistema de gestión a medida, inventario, facturación y conciliación bancaria.",
+      "Comienzo del desarrollo de los sistemas de gestión a medida: módulos ERP de fabricación, MES con OEE y primeros módulos WMS de trazabilidad de colada.",
     justification:
-      "Se activa una vez la clínica haya recibido el ingreso de la subvención estimada en 30.000 €, sin riesgo de tesorería.",
+      "Se activa una vez la empresa haya recibido el ingreso del bono de 30.000 € en su cuenta, sin riesgo de tesorería para la empresa.",
     color: "bg-[oklch(0.45_0.17_250)]",
-    barWidth: "w-5/12",
   },
   {
     num: "03",
-    when: "Fin de proyecto · Validación clínica",
+    when: "Fin de proyecto · Validación y publicación",
     amount: "Subvención 30.000 €",
-    title: "Entrega y Aceptación Final",
+    title: "Entrega, Publicación y Aceptación Final",
     concept:
-      "Liquidación del proyecto. Cálculo: 30.000 € (Subvención Total) − 1.500 € (Hito 1) − 10.000 € (Hito 2) = 18.500 €.",
+      "Liquidación del proyecto. Cálculo: 30.000 € (Subvención Total) − 1.500 € (Hito 1) − 10.000 € (Hito 2) = 18.500 €. Incluye publicación de producto de datos y justificación UE.",
     justification:
-      "El pago solo se realiza tras la finalización, despliegue y validación del sistema por parte del equipo clínico.",
+      "El pago solo se realiza tras la finalización, despliegue, publicación del producto de datos en el catálogo y validación por parte del equipo de gestión.",
     color: "bg-[oklch(0.38_0.15_250)]",
-    barWidth: "w-full",
   },
 ]
 
@@ -64,17 +61,15 @@ export default function Slide12Payments() {
           {/* Visual timeline bar */}
           <div className="bg-white border border-[oklch(0.88_0.02_240)] rounded-lg p-5">
             <p className="text-[oklch(0.38_0.15_250)] text-xs font-mono uppercase tracking-widest mb-5 font-bold">
-              Línea de Tiempo del Proyecto (6 meses)
+              Línea de Tiempo del Proyecto (7 meses)
             </p>
             <div className="relative">
-              {/* Track */}
               <div className="h-2 bg-[oklch(0.88_0.06_240)] rounded-full w-full mb-6" />
-              {/* Markers */}
               <div className="absolute top-0 left-0 flex w-full justify-between -translate-y-1/2">
                 {[
-                  { pos: "0%", label: "Firma", sublabel: "Hito 1", amount: "1.500 €" },
-                  { pos: "41.6%", label: "Mes 3", sublabel: "Hito 2", amount: "10.000 €" },
-                  { pos: "100%", label: "Mes 6", sublabel: "Hito 3", amount: "Resto" },
+                  { pos: "0%", label: "Firma" },
+                  { pos: "41.6%", label: "Mes 3" },
+                  { pos: "100%", label: "Mes 7" },
                 ].map((m, i) => (
                   <div
                     key={i}
@@ -85,12 +80,11 @@ export default function Slide12Payments() {
                   </div>
                 ))}
               </div>
-              {/* Labels below bar */}
               <div className="flex justify-between mt-2">
                 {[
                   { label: "Firma del acuerdo", sublabel: "Hito 1 · 1.500 €" },
                   { label: "Mes 3 · Tras subvención", sublabel: "Hito 2 · 10.000 €" },
-                  { label: "Mes 6 · Validación final", sublabel: "Hito 3 · Resto" },
+                  { label: "Mes 7 · Validación final", sublabel: "Hito 3 · Resto" },
                 ].map((item, i) => (
                   <div key={i} className={`flex flex-col ${i === 1 ? "items-center" : i === 2 ? "items-end" : "items-start"} max-w-28`}>
                     <p className="text-xs font-bold text-[oklch(0.25_0.05_240)] leading-tight">{item.label}</p>
@@ -108,10 +102,8 @@ export default function Slide12Payments() {
                 key={hito.num}
                 className="bg-white border border-[oklch(0.88_0.02_240)] rounded-lg overflow-hidden flex"
               >
-                {/* Left accent */}
                 <div className={`${hito.color} w-1.5 shrink-0`} />
                 <div className="flex-1 p-5 flex gap-5">
-                  {/* Number + amount */}
                   <div className="flex flex-col items-center justify-center gap-1 w-24 shrink-0">
                     <div className={`${hito.color} w-10 h-10 rounded-full flex items-center justify-center`}>
                       <span className="text-white font-bold text-sm">{hito.num}</span>
@@ -120,13 +112,10 @@ export default function Slide12Payments() {
                       {hito.amount}
                     </p>
                   </div>
-                  {/* Content */}
                   <div className="flex-1 flex flex-col gap-2">
-                    <div className="flex items-start justify-between gap-4">
-                      <div>
-                        <p className="text-[oklch(0.55_0.03_240)] text-xs font-mono">{hito.when}</p>
-                        <p className="text-[oklch(0.15_0.02_240)] font-bold text-sm mt-0.5">{hito.title}</p>
-                      </div>
+                    <div>
+                      <p className="text-[oklch(0.55_0.03_240)] text-xs font-mono">{hito.when}</p>
+                      <p className="text-[oklch(0.15_0.02_240)] font-bold text-sm mt-0.5">{hito.title}</p>
                     </div>
                     <p className="text-[oklch(0.35_0.04_240)] text-xs leading-relaxed">
                       <span className="font-bold text-[oklch(0.38_0.15_250)]">Concepto: </span>
@@ -168,7 +157,7 @@ export default function Slide12Payments() {
               </div>
             </div>
             <p className="text-[oklch(0.80_0.07_240)] text-xs leading-relaxed">
-              El importe exacto se ajusta a la cantidad final concedida por la administración.
+              El importe exacto se ajusta a la cantidad final concedida por Red.es.
             </p>
           </div>
 
@@ -178,15 +167,15 @@ export default function Slide12Payments() {
             </p>
             <p className="text-[oklch(0.35_0.04_240)] text-sm leading-relaxed">
               Los pagos de los Hitos 2 y 3 se activan{" "}
-              <strong className="text-[oklch(0.38_0.15_250)]">solo después</strong> de que la clínica
-              haya recibido los fondos europeos en su cuenta. Nunca antes.
+              <strong className="text-[oklch(0.38_0.15_250)]">solo después</strong> de que la empresa
+              haya recibido el bono europeo en su cuenta. Nunca antes.
             </p>
             <div className="mt-auto bg-[oklch(0.88_0.06_240)] rounded p-3">
               <p className="text-[oklch(0.38_0.15_250)] text-xs font-mono font-bold uppercase tracking-widest mb-1">
-                Flujo de caja clínica
+                Flujo de caja empresa
               </p>
               <p className="text-[oklch(0.35_0.04_240)] text-xs">
-                Entrada subvención &rarr; Pago proveedor &rarr; Sistema entregado
+                Entrada bono KTED &rarr; Pago ACCURO &rarr; Sistemas entregados
               </p>
             </div>
           </div>

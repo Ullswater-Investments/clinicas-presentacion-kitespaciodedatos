@@ -2,20 +2,20 @@
 
 const guarantees = [
   {
-    label: "Riesgo Asumido por el Proveedor",
-    body: "Asumimos el 100% de los gastos de gestión burocrática y el riesgo de obtención de la ayuda. Si no se concede la subvención, la clínica no tiene ninguna obligación de pago.",
+    label: "Riesgo Asumido por ACCURO Technology",
+    body: "Asumimos el 100% de los gastos de gestión burocrática y el riesgo de obtención de la ayuda. Si no se concede la subvención KTED, la empresa metalúrgica no tiene ninguna obligación de pago adicional.",
     icon: "R",
     accent: "bg-[oklch(0.55_0.18_250)]",
   },
   {
     label: "Garantía de Límite de Gasto",
-    body: "La clínica nunca pagará de su bolsillo un importe superior a la subvención recibida. El modelo está diseñado para que el gasto neto de la clínica sea siempre 0 €.",
+    body: "La empresa nunca pagará de su propio capital un importe superior a la subvención recibida. El modelo está diseñado para que el gasto neto de la empresa sea siempre 0 €.",
     icon: "G",
     accent: "bg-[oklch(0.45_0.17_250)]",
   },
   {
     label: "Cláusula de Ajuste (< 25.000 €)",
-    body: "En el supuesto excepcional de que la administración concediera una subvención inferior a 25.000 €, el proyecto no se cancela: se redefinirá su alcance y módulos funcionales de mutuo acuerdo para ajustarlo exactamente a la cantidad concedida, sin generar deuda para la clínica.",
+    body: "Si la administración concediera una subvención inferior a 25.000 €, el proyecto no se cancela: se redefinirá el alcance de servicios de mutuo acuerdo para ajustarlo exactamente a la cantidad concedida, sin generar deuda.",
     icon: "A",
     accent: "bg-[oklch(0.38_0.15_250)]",
   },
@@ -24,13 +24,13 @@ const guarantees = [
 const scenarios = [
   {
     scenario: "Subvención concedida: 30.000 €",
-    outcome: "Proyecto completo, todos los módulos. Clínica paga 0 € de su bolsillo.",
+    outcome: "Proyecto completo: 30 servicios ERP+MES+WMS+CRM. Empresa paga 0 € de su bolsillo.",
     status: "Óptimo",
     statusColor: "bg-[oklch(0.55_0.18_250)] text-white",
   },
   {
     scenario: "Subvención concedida: 25.000 – 29.999 €",
-    outcome: "Proyecto ligeramente reducido. Ajuste de módulos de mutuo acuerdo. Clínica paga 0 €.",
+    outcome: "Proyecto ligeramente reducido. Ajuste de módulos de mutuo acuerdo. Empresa paga 0 €.",
     status: "Ajuste menor",
     statusColor: "bg-[oklch(0.78_0.14_85)] text-[oklch(0.20_0.05_240)]",
   },
@@ -42,7 +42,7 @@ const scenarios = [
   },
   {
     scenario: "Subvención denegada",
-    outcome: "El proyecto no se ejecuta. La clínica solo ha desembolsado el Hito 1 de 1.500 € del conector EHDS.",
+    outcome: "El proyecto no se ejecuta. La empresa solo ha desembolsado el Hito 1 de 1.500 € del conector KTED.",
     status: "Riesgo mínimo",
     statusColor: "bg-[oklch(0.94_0.01_240)] text-[oklch(0.45_0.04_240)]",
   },
@@ -58,7 +58,7 @@ export default function Slide13Guarantees() {
             Garantías y Salvaguarda
           </p>
           <h2 className="text-white text-xl font-bold">
-            Cuadro de Garantías — Escudo de Riesgo Cero para la Clínica
+            Cuadro de Garantías — Escudo de Riesgo Cero para la Empresa
           </h2>
         </div>
         <div className="flex items-center gap-2">
@@ -93,7 +93,7 @@ export default function Slide13Guarantees() {
 
           {/* Scenario table */}
           <div className="bg-white border border-[oklch(0.88_0.02_240)] rounded-lg overflow-hidden flex-1">
-            <div className="bg-[oklch(0.94_0.01_240)] px-5 py-3 flex items-center gap-2">
+            <div className="bg-[oklch(0.94_0.01_240)] px-5 py-3">
               <p className="text-[oklch(0.38_0.15_250)] text-xs font-mono uppercase tracking-widest font-bold">
                 Tabla de Escenarios Posibles
               </p>
@@ -118,13 +118,12 @@ export default function Slide13Guarantees() {
         <div className="w-60 flex flex-col gap-4">
           {/* Shield box */}
           <div className="bg-[oklch(0.38_0.15_250)] rounded-xl p-6 flex flex-col items-center gap-4 text-center">
-            {/* Shield icon */}
             <div className="w-16 h-16 bg-[oklch(0.78_0.14_85)] rounded-full flex items-center justify-center shadow-lg">
               <span className="text-[oklch(0.20_0.05_240)] font-black text-2xl">0</span>
             </div>
             <div>
               <p className="text-[oklch(0.78_0.14_85)] text-xs font-mono uppercase tracking-widest mb-1">
-                Gasto neto clínica
+                Gasto neto empresa
               </p>
               <p className="text-white font-bold text-3xl">0 €</p>
               <p className="text-[oklch(0.80_0.07_240)] text-xs mt-1 leading-relaxed">
@@ -134,8 +133,8 @@ export default function Slide13Guarantees() {
             <div className="w-full h-px bg-[oklch(0.50_0.15_250)]" />
             <div className="flex flex-col gap-2 w-full">
               {[
-                "Riesgo burocrático: Proveedor",
-                "Riesgo técnico: Proveedor",
+                "Riesgo burocrático: ACCURO",
+                "Riesgo técnico: ACCURO",
                 "Riesgo financiero: 0 €",
               ].map((item) => (
                 <div key={item} className="flex items-center gap-2">
@@ -152,16 +151,16 @@ export default function Slide13Guarantees() {
               Nuestro Compromiso
             </p>
             <p className="text-[oklch(0.35_0.04_240)] text-xs leading-relaxed">
-              Acompañamos a la clínica en todo el proceso: desde la solicitud de la ayuda hasta la
-              justificación final ante la administración, incluyendo la preparación de toda la
-              documentación técnica y económica requerida.
+              Acompañamos a la empresa metalúrgica en todo el proceso: desde la solicitud del bono
+              KTED hasta la justificación final ante Red.es, incluyendo la preparación de toda la
+              documentación técnica y económica, evidencias y video-evidencias requeridas.
             </p>
             <div className="mt-auto bg-[oklch(0.88_0.06_240)] rounded p-3">
               <p className="text-[oklch(0.38_0.15_250)] text-xs font-bold">
-                Global Data Care — EHDS 2025
+                ACCURO Technology — Industria 4.0
               </p>
               <p className="text-[oklch(0.55_0.03_240)] text-xs mt-0.5">
-                Proyecto co-financiado Next Generation EU
+                KTED 2025–2026 · Co-financiado Next Generation EU
               </p>
             </div>
           </div>

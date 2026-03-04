@@ -29,11 +29,7 @@ export default function Slide11EcoIntro() {
               Principio Central del Modelo
             </p>
             <p className="text-white text-base leading-relaxed">
-              Nuestro modelo de trabajo garantiza que la clínica financia la modernización tecnológica{" "}
-              <strong className="text-[oklch(0.78_0.14_85)]">
-                exclusivamente a través de los fondos europeos
-              </strong>
-              , asumiendo nosotros el riesgo de la gestión.
+              Tu empresa <strong className="text-[oklch(0.78_0.14_85)]">obtiene una subvención de 30.000€</strong> del programa KTED y decide libremente qué servicios del catálogo de ACCURO Technology consume. Realizamos juntos un análisis previo para identificar las necesidades reales; <strong className="text-[oklch(0.78_0.14_85)]">nunca imponemos servicios que no necesitas</strong>. El presupuesto se adapta siempre al importe del bono concedido.
             </p>
           </div>
 
@@ -43,17 +39,17 @@ export default function Slide11EcoIntro() {
               {
                 icon: "€",
                 title: "Financiado 100% por la Subvención",
-                body: "La clínica no adelanta capital propio. El proyecto arranca y concluye con fondos europeos.",
+                body: "La empresa no adelanta capital propio. El proyecto arranca y concluye con fondos del bono KTED de Red.es.",
               },
               {
-                icon: "⚖",
+                icon: "R",
                 title: "Riesgo Gestionado por el Proveedor",
-                body: "Asumimos la carga burocrática, técnica y el riesgo de no obtención de la ayuda.",
+                body: "ACCURO asume la carga burocrática, técnica y el riesgo de no obtención de la ayuda por parte de la empresa.",
               },
               {
-                icon: "✓",
+                icon: "A",
                 title: "Sin Deuda ni Obligación Extra",
-                body: "Si la subvención es inferior a 25.000 €, el alcance se reduce. Nunca se genera deuda.",
+                body: "Si la subvención es inferior a 25.000 €, el alcance de servicios se reduce. Nunca se genera deuda para la empresa.",
               },
             ].map((p) => (
               <div
@@ -81,7 +77,7 @@ export default function Slide11EcoIntro() {
               { label: "Pago inicial (Hito 1)", value: "1.500 €" },
               { label: "Pago en mes 3 (Hito 2)", value: "10.000 €" },
               { label: "Pago final (Hito 3)", value: "Importe restante" },
-              { label: "Gasto clínica de su bolsillo", value: "0 €" },
+              { label: "Gasto empresa de su bolsillo", value: "0 €" },
             ].map((row) => (
               <div
                 key={row.label}
@@ -98,8 +94,8 @@ export default function Slide11EcoIntro() {
               Referencia normativa
             </p>
             <p className="text-[oklch(0.88_0.04_240)] text-xs leading-relaxed">
-              Kit Espacio de Datos de Salud — Convocatoria 2025. Fondo co-financiado por la Unión Europea
-              a través del Programa PRTR / Next Generation EU.
+              Kit Espacio de Datos (KTED) — Convocatoria 2025–2026. Fondo co-financiado por la Unión
+              Europea a través del Programa PRTR / Next Generation EU. Plazo: 31 de Marzo de 2026.
             </p>
           </div>
         </div>

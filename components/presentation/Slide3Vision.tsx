@@ -8,12 +8,12 @@ export default function Slide3Vision() {
         <div>
           <p className="text-[oklch(0.78_0.14_85)] text-xs font-mono uppercase tracking-widest mb-0.5">Visión</p>
           <h2 className="text-white text-xl font-bold">
-            Integración en el Espacio Europeo de Datos (Global Data Care)
+            El Kit Espacio de Datos y la Oportunidad para el Sector del Metal
           </h2>
         </div>
         <div className="flex items-center gap-2">
           <div className="w-2 h-2 rounded-full bg-[oklch(0.78_0.14_85)]" />
-          <span className="text-[oklch(0.78_0.14_85)] text-xs font-mono">03 / 10</span>
+          <span className="text-[oklch(0.78_0.14_85)] text-xs font-mono">03 / 13</span>
         </div>
       </div>
 
@@ -22,45 +22,43 @@ export default function Slide3Vision() {
         <div className="flex-1 flex flex-col gap-5">
           <div className="bg-white border border-[oklch(0.88_0.02_240)] rounded-lg p-5">
             <p className="text-sm leading-relaxed text-[oklch(0.25_0.05_240)]">
-              Gracias al <strong className="text-[oklch(0.38_0.15_250)]">"Kit Espacio de Datos"</strong>, la clínica
-              no solo digitalizará sus procesos, sino que estructurará su información bajo{" "}
-              <strong>estándares europeos de interoperabilidad (HL7, FHIR)</strong>, permitiendo el intercambio seguro
-              de datos de salud e inventario clínico dentro del marco de la UE.
+              El programa <strong className="text-[oklch(0.38_0.15_250)]">"Kit Espacio de Datos" (KTED)</strong> de Red.es,
+              financiado con fondos Next Generation EU, concede a empresas como la tuya una{" "}
+              <strong>subvención de hasta 30.000€</strong> para digitalizarse. ACCURO Technology ofrece un catálogo completo de servicios especializados —{" "}
+              <strong className="text-[oklch(0.38_0.15_250)]">cada empresa elige libremente qué servicios necesita</strong>{" "}
+              hasta cubrir el importe del bono.
             </p>
           </div>
 
-          {/* EU ecosystem diagram */}
+          {/* Ecosystem diagram */}
           <div className="bg-white border border-[oklch(0.88_0.02_240)] rounded-lg p-5 flex-1">
             <p className="text-[oklch(0.38_0.15_250)] text-xs font-mono uppercase tracking-widest mb-4 font-bold">
-              Ecosistema Global Data Care
+              Ecosistema de Espacios de Datos Industriales
             </p>
             <div className="relative flex flex-col items-center gap-3">
-              {/* Central hub */}
               <div className="w-full bg-[oklch(0.38_0.15_250)] text-white rounded-lg p-3 text-center">
-                <p className="font-bold text-sm">EHDS — Espacio Europeo de Datos de Salud</p>
-                <p className="text-[oklch(0.78_0.14_85)] text-xs mt-0.5">Marco regulatorio UE · HL7 FHIR</p>
+                <p className="font-bold text-sm">Red.es / PRTR — Agenda España Digital 2026</p>
+                <p className="text-[oklch(0.78_0.14_85)] text-xs mt-0.5">Marco regulatorio UE · UNE 0087:2025</p>
               </div>
               <div className="w-px h-4 bg-[oklch(0.38_0.15_250)]" />
-              {/* Second layer */}
               <div className="w-full bg-[oklch(0.88_0.06_240)] border border-[oklch(0.75_0.08_240)] rounded-lg p-3 text-center">
-                <p className="font-bold text-sm text-[oklch(0.25_0.05_240)]">Global Data Care</p>
-                <p className="text-[oklch(0.5_0.03_240)] text-xs mt-0.5">Red de intercambio de datos clínicos certificada</p>
+                <p className="font-bold text-sm text-[oklch(0.25_0.05_240)]">CRED — Centro de Referencia de Espacios de Datos</p>
+                <p className="text-[oklch(0.5_0.03_240)] text-xs mt-0.5">Lista de Confianza · Ecosistemas certificados UNE 0087:2025</p>
               </div>
               <div className="w-px h-4 bg-[oklch(0.38_0.15_250)]" />
-              {/* Third layer */}
               <div className="w-full bg-[oklch(0.55_0.18_250)] text-white rounded-lg p-3 text-center">
-                <p className="font-bold text-sm">Clínica Dental — Nodo Local</p>
-                <p className="text-[oklch(0.88_0.04_240)] text-xs mt-0.5">App a medida + Odoo ERP + API Python</p>
+                <p className="font-bold text-sm">Empresa Metalúrgica — Nodo Proveedor</p>
+                <p className="text-[oklch(0.88_0.04_240)] text-xs mt-0.5">ERP + MES + WMS + CRM · Publicación de Productos de Datos</p>
               </div>
             </div>
           </div>
 
           <div className="grid grid-cols-2 gap-3">
             {[
-              { std: "HL7 FHIR", desc: "Estándar para intercambio de datos clínicos" },
-              { std: "RGPD / ENS", desc: "Protección y seguridad de datos personales" },
-              { std: "TicketBAI / FacturaE", desc: "Normativa fiscal local y electrónica" },
-              { std: "ISO 13485", desc: "Trazabilidad de productos sanitarios" },
+              { std: "UNE 0087:2025", desc: "Estándar de interoperabilidad y soberanía del dato en España" },
+              { std: "RGPD / ENS", desc: "Protección de datos y seguridad de la información" },
+              { std: "Eclipse Dataspace", desc: "Conector técnico para participar en el espacio de datos" },
+              { std: "ISO 9001 / 14001", desc: "Trazabilidad de calidad y huella medioambiental" },
             ].map((item) => (
               <div key={item.std} className="bg-white border border-[oklch(0.88_0.02_240)] rounded-lg p-3">
                 <p className="text-[oklch(0.38_0.15_250)] font-bold text-xs font-mono">{item.std}</p>
@@ -75,30 +73,29 @@ export default function Slide3Vision() {
           {/* Funding box */}
           <div className="bg-[oklch(0.78_0.14_85)] rounded-lg p-5 flex flex-col gap-2">
             <p className="text-[oklch(0.25_0.05_240)] text-xs font-mono uppercase tracking-widest font-bold">
-              Financiación Solicitada
+              Subvención Disponible para tu Empresa
             </p>
             <p className="text-4xl font-bold text-[oklch(0.20_0.05_240)]">30.000€</p>
             <div className="h-px bg-[oklch(0.65_0.12_80)] my-1" />
             <p className="text-[oklch(0.25_0.05_240)] text-xs leading-relaxed">
-              Destinada a la consultoría, adaptación de bases de datos, seguridad de la información y desarrollo del
-              software puente para cumplir con los requisitos del programa europeo.
+              La empresa <strong>obtiene el bono de 30.000€</strong> y decide con ACCURO qué servicios del catálogo consume según sus necesidades reales. No es un paquete cerrado: es un presupuesto flexible a tu medida.
             </p>
           </div>
 
           <div className="bg-white border border-[oklch(0.88_0.02_240)] rounded-lg p-5 flex flex-col gap-3">
             <p className="text-[oklch(0.38_0.15_250)] text-xs font-mono uppercase tracking-widest font-bold">
-              Partidas Presupuestarias
+              Tabla de Ayudas KTED
             </p>
             {[
-              { label: "Consultoría EHDS", pct: 30 },
-              { label: "Desarrollo de software", pct: 40 },
-              { label: "Seguridad y certificación", pct: 15 },
-              { label: "Formación y despliegue", pct: 15 },
+              { label: "Participante privado", pct: 50, amount: "15.000 €" },
+              { label: "Proveedor privado", pct: 100, amount: "30.000 €" },
+              { label: "AAPP Participante", pct: 83, amount: "25.000 €" },
+              { label: "AAPP Proveedor", pct: 100, amount: "50.000 €" },
             ].map((item) => (
               <div key={item.label}>
                 <div className="flex justify-between text-xs mb-1">
                   <span className="text-[oklch(0.35_0.04_240)]">{item.label}</span>
-                  <span className="text-[oklch(0.38_0.15_250)] font-bold">{item.pct}%</span>
+                  <span className="text-[oklch(0.38_0.15_250)] font-bold">{item.amount}</span>
                 </div>
                 <div className="w-full bg-[oklch(0.94_0.01_240)] rounded-full h-1.5">
                   <div
@@ -114,9 +111,10 @@ export default function Slide3Vision() {
             <p className="text-[oklch(0.78_0.14_85)] text-xs font-mono uppercase tracking-widest">Beneficios Clave</p>
             <div className="flex flex-col gap-1.5 mt-1">
               {[
-                "Interoperabilidad datos sanitarios EU",
-                "Preparación para EHDS obligatorio 2027",
-                "Acceso a redes de datos europeas",
+                "Compartir capacidad de producción en tiempo real",
+                "Trazabilidad de lotes en la cadena de suministro",
+                "Acceso a financiación basada en rendimiento real",
+                "Soberanía digital sobre datos de fabricación",
               ].map((b) => (
                 <div key={b} className="flex items-start gap-2">
                   <span className="text-[oklch(0.78_0.14_85)] mt-0.5">✓</span>
